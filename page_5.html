@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Boxiocns CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class="bx bxl-c-plus-plus"></i>
+      <span class="logo_name">CodingLab</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Category</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="bx bx-collection"></i>
+            <span class="link_name">Category</span>
+          </a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="bx bx-book-alt"></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-pie-chart-alt-2"></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-line-chart"></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="bx bx-plug"></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-compass"></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-history"></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <!--<img src="image/profile.jpg" alt="profileImg">-->
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Prem Shahi</div>
+            <div class="job">Web Desginer</div>
+          </div>
+          <i class="bx bx-log-out"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class="bx bx-menu"></i>
+      <span class="text">Drop Down Sidebar</span>
+    </div>
+    <div class="one">
+      <div id="slideshow-container">
+        <div class="multiple-slides-container">
+          <!-- <div class="slide">
+            <div class="slider-container">
+              <div class="slider-heading">
+                <h2>Care Modules: Allergy Testing</h2>
+              </div>
+              <div class="slide-subHeading">
+                <div class="slide-subHeading-left"></div>
+                <div class="slide-subHeading-center">
+                  <i class="fa-solid fa-angle-left"></i>
+                  <span>There are three primary types of allergens, which
+                    are:</span>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="slide-content-typeArrows">
+                <img src="./greenPin.png" alt="" />
+                <img src="./greenPin.png" alt="" />
+                <img src="./greenPin.png" alt="" />
+              </div>
+            </div>
+            <audio controls>
+              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+          </div> -->
+
+          <!-- <div class="slide">
+            <div class="slider-container">
+              <div class="slider-heading">
+                <h2>Care Modules222: Allergy Testing</h2>
+              </div>
+              <div class="slide-subHeading">
+                <div class="slide-subHeading-left"></div>
+                <div class="slide-subHeading-center">
+                  <i class="fa-solid fa-angle-left"></i>
+                  <span>There are three primary types of allergens, which
+                    are:</span>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="slide-content-typeArrows">
+                <img src="./greenPin.png" alt="" />
+                <img src="./greenPin.png" alt="" />
+                <img src="./greenPin.png" alt="" />
+              </div>
+            </div>
+            <audio controls>
+              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+          </div> -->
+          <div class="slide">
+            <div class="slider-container">
+              <div class="slider-heading">
+                <h2>Care Modules333: Allergy Testing</h2>
+              </div>
+
+              <div class="slide-subHeading">
+                <br />
+                <br />
+                <span class="slide-subHeading-left">Benefits of Allergy Testing</span>
+                <div class="slide-subHeading-center">
+                  <i class="fa-solid fa-angle-left"></i>
+                  <span>There are three primary types of allergens, which
+                    are:</span>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="slide-allergy-testing-container">
+                <div class="slide-content-typeArrows">
+                  <div class="green-pins-container" onmousemove="handleAllergensType(event, 1)"
+                    onmouseleave="handleAllergensType(event, 1)">
+                    <img src="./greenPin.png" id="lightGreenPin">
+                    <img src="./darkGreenPin.png" id="darkGreenPin">
+                    <span id="greenPin-title">
+                      Inhaled allergens
+                    </span>
+                  </div>
+                  <div class="green-pins-container" onmousemove="handleAllergensType(event, 2)"
+                    onmouseleave="handleAllergensType(event, 2)">
+                    <img src="./greenPin.png" id="lightGreenPin">
+                    <img src="./darkGreenPin.png" id="darkGreenPin">
+                    <span id="greenPin-title">
+                      Ingested allergens
+                    </span>
+                  </div>
+                  <div class="green-pins-container" onmousemove="handleAllergensType(event, 3)"
+                    onmouseleave="handleAllergensType(event, 3)">
+                    <img src="./greenPin.png" id="lightGreenPin">
+                    <img src="./darkGreenPin.png" id="darkGreenPin">
+                    <span id="greenPin-title">
+                      Contact allergens
+                    </span>
+                  </div>
+                </div>
+                <div class="slide-allergy-testing-content">
+                  <p>These affect the body when they comw in contact with the lungs or <br /> memberance of the nostrils
+                    or throat.</p>
+                  <h2>Examples:</h2>
+                  <div class="slide-example-types">
+                    <div class="slide-example-typesImage">
+                      <img src="./Asset 19.png" alt="">
+                      <h2>Fungus</h2>
+                    </div>
+                    <div class="slide-example-typesImage">
+                      <img src="./Asset 20.png" alt="">
+                      <h2>Mold</h2>
+                    </div>
+                    <div class="slide-example-typesImage">
+                      <img src="./Asset 21.png" alt="">
+                      <h2>Animal dander</h2>
+                    </div>
+                    <div class="slide-example-typesImage">
+                      <img src="./Asset 23.png" alt="">
+                      <h2>Cockroach</h2>
+                    </div>
+                    <div class="slide-example-typesImage">
+                      <img src="./Asset 24.png" alt="">
+                      <h2>Dust mites</h2>
+                    </div>
+                    <div class="slide-example-typesImage">
+                      <img src="./Asset 25.png" alt="">
+                      <h2>Pollen</h2>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <audio controls>
+              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+
+    //   Player functionalities
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      /*setTimeout(showSlides, 2000);*/
+    }
+
+    function handleAllergensType(event, id) {
+      switch (id) {
+        case "1":
+          console.log(1);
+          break;
+        case "2":
+          console.log(2);
+          break;
+        case "3":
+          console.log(3);
+          break;
+        default:
+          break;
+      }
+      console.log(event.type)
+      let greenPinArrow = document.getElementById("lightGreenPin");
+      let greenPinText = document.getElementById("greenPin-title")
+      event.type === 'mousemove' ?
+        (greenPinArrow.src = "./darkGreenPin.png",
+          greenPinText.style.color = "white")
+        :
+        (greenPinArrow.src = "./greenPin.png",
+          greenPinText.style.color = "black")
+    }
+
+    /*  function handleOUTAllergensType() {
+        let greenPinArrow = document.getElementById("lightGreenPin");
+        greenPinArrow.src = "./greenPin.png"
+      }
+      */
+  </script>
+</body>
+
+</html>
